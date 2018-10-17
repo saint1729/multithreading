@@ -1,0 +1,12 @@
+package com.cop.courses.multithreading;
+
+
+public class Processor extends Thread {
+	public void run() {
+		
+	}
+}
+
+public class ThreadSynchronization {
+
+}

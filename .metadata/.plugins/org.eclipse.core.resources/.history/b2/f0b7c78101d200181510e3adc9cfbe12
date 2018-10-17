@@ -1,0 +1,9 @@
+package com.cop.courses.multithreading;
+
+public class _04Worker {
+
+	public static void main(String[] args) {
+		System.out.println("Hello");
+	}
+	
+}

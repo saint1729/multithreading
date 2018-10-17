@@ -1,0 +1,15 @@
+package com.cop.courses.multithreading;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class _04Worker {
+	
+	private List<Integer> list1 = new ArrayList<>();
+	private List<Integer> list2 = new ArrayList<>();
+	
+	public void main() {
+		System.out.println("Hello");
+	}
+	
+}

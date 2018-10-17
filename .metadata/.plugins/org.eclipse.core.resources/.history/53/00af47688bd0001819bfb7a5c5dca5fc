@@ -1,0 +1,23 @@
+package com.cop.courses.multithreading;
+
+
+class Processor extends Thread {
+	
+	static boolean running = true;
+	
+	public void run() {
+		while(running) {
+			System.out.println("Alpha");
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+}
+
+public class BasicThreadSynchronization {
+
+}

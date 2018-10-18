@@ -1,0 +1,18 @@
+package com.cop.courses.multithreading;
+
+
+class Processor4 extends Thread {
+	
+	public void producer() {
+		
+	}
+	
+	public void consumer() {
+		
+	}
+	
+}
+
+public class _08WaitAndNotify {
+	
+}

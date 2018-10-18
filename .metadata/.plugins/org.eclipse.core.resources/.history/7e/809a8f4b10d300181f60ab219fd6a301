@@ -1,0 +1,12 @@
+package com.cop.courses.multithreading;
+
+import java.util.LinkedList;
+
+class Processor5 extends Thread {
+	private LinkedList<Integer> list = new LinkedList<>();
+}
+
+
+public class _09LowLevelProducerConsumer {
+	
+}

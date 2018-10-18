@@ -1,0 +1,20 @@
+package com.cop.courses.multithreading;
+
+
+class Processor4 extends Thread {
+	
+	public void produce() throws InterruptedException {
+		
+	}
+	
+	public void consume() throws InterruptedException {
+		Thread.sleep(5000);
+	}
+	
+}
+
+public class _08WaitAndNotify {
+	
+	
+	
+}

@@ -1,0 +1,29 @@
+package com.cop.courses.multithreading;
+
+import java.util.LinkedList;
+import java.util.Random;
+
+class Processor5 {
+	private LinkedList<Integer> list = new LinkedList<>();
+	private final int LIMIT = 10;
+	
+	
+	public void produce() throws InterruptedException {
+
+		int value = 0;
+
+		while(true) {
+			list.add(value);
+		}
+	}
+
+	public void consume() throws InterruptedException {
+		
+	}
+
+}
+
+
+public class _09LowLevelProducerConsumer {
+	
+}

@@ -1,0 +1,10 @@
+package com.cop.courses.multithreading;
+
+
+class Processor extends Thread {
+	
+}
+
+public class _08WaitAndNotify {
+	
+}

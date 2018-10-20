@@ -1,0 +1,26 @@
+package com.cop.courses.multithreading;
+
+import java.util.Random;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class _13CallableAndFuture {
+	
+	public static void main(String[] args) {
+		
+		ExecutorService executor = Executors.newCachedThreadPool();
+		
+		executor.submit(new Callable<Integer>() {
+			
+			public Integer call() throws Exception {
+				
+				private int duration = new Random().nextInt(4000);
+				
+				return duration;
+			}
+		});
+		
+	}
+	
+}

@@ -1,0 +1,16 @@
+package com.cop.courses.multithreading;
+
+import java.util.concurrent.Semaphore;
+
+public class _12Semaphores {
+	
+	public static void main(String[] args) {
+		
+		Semaphore semaphore = new Semaphore(1);
+		
+		semaphore.acquire();
+		
+		
+	}
+	
+}

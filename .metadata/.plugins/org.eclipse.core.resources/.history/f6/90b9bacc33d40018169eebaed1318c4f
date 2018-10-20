@@ -1,0 +1,53 @@
+package com.cop.courses.multithreading;
+
+
+class Account {
+	
+	private int balance = 10000;
+	
+	public void withdraw(int money) {
+		this.balance -= money;
+	}
+	
+	public void deposit(int money) {
+		this.balance += money;
+	}
+	
+	public void transfer(Account acc1, Account acc2, int money) {
+		acc1.withdraw(money);
+		acc2.deposit(money);
+	}
+	
+	public int getBalance() {
+		return this.balance;
+	}
+	
+}
+
+class Runner2 {
+	
+	private Account acc1 = new Account();
+	private Account acc2 = new Account();
+	
+	public void firstThread() {
+		
+	}
+	
+	public void secondThread() {
+		
+	}
+	
+	public void finished() {
+		System.out.println("Balance in account1: " + acc1.getBalance());
+		System.out.println("Balance in account2: " + acc2.getBalance());
+		System.out.println("Total balance: " + acc1.getBalance()+acc2.getBalance());
+	}
+	
+}
+
+
+public class _11Deadlock {
+	
+	
+	
+}

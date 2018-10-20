@@ -1,0 +1,45 @@
+package com.cop.courses.multithreading;
+
+import java.util.concurrent.Semaphore;
+
+
+class Connection {
+	
+	private static Connection instance = new Connection();
+	
+	private int connections = 0;
+	
+	private Connection() {
+		
+	}
+	
+	public static  Connection getInstance() {
+		return instance;
+	}
+	
+	public void connect() {
+		
+		synchronized(this) {
+			this.connections += 1;
+			System.out.println("Current connections: " + this.connections);
+		}
+		
+		synchronized (this) {
+			this.connections -= 1;
+		}
+		
+	}
+	
+}
+
+
+public class _12Semaphores {
+	
+	public static void main(String[] args) throws InterruptedException {
+		
+		Connection.getInstance().connect();
+		
+		
+	}
+	
+}

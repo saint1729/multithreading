@@ -1,0 +1,10 @@
+package com.cop.courses.multithreading;
+
+
+public class _14InterruptingThreads {
+	
+	public static void main(String[] args) {
+		
+	}
+	
+}

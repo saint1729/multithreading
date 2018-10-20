@@ -1,0 +1,19 @@
+package com.cop.courses.multithreading;
+
+import java.util.concurrent.Semaphore;
+
+
+class Connection {
+	
+	private static Connection connection = new Connection();
+	
+}
+
+
+public class _12Semaphores {
+	
+	public static void main(String[] args) throws InterruptedException {
+		
+	}
+	
+}

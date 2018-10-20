@@ -1,0 +1,11 @@
+package com.cop.courses.multithreading;
+
+
+
+public class _12Semaphores {
+	
+	public static void main(String[] args) {
+		
+	}
+	
+}

@@ -1,0 +1,30 @@
+package com.cop.courses.multithreading;
+
+
+class Account {
+	
+	private int balance = 10000;
+	
+	public void withdraw(int money) {
+		this.balance -= money;
+	}
+	
+	public void deposit(int money) {
+		balance += money;
+	}
+	
+	public void transfer(Account acc1, Account acc2, int money) {
+		acc1.withdraw(money);
+		acc2.deposit(money);
+	}
+	
+}
+
+class Runner2 {
+	
+}
+
+
+public class _11Deadlock {
+
+}

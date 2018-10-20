@@ -1,0 +1,26 @@
+package com.cop.courses.multithreading;
+
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
+class Runner {
+	
+	public Lock lock = new ReentrantLock();
+	public Condition condition = lock.newCondition();
+	
+	public void firstThread() {
+		
+	}
+	
+	public void secondThread() {
+		
+	}
+	
+}
+
+
+
+public class _10ReentrantLocks {
+	
+}

@@ -1,0 +1,31 @@
+package com.waterline;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.InetSocketAddress;
+import java.net.Proxy;
+import java.net.URL;
+import java.net.URLConnection;
+
+import org.apache.commons.io.IOUtils;
+
+public class GetIPAddress {
+	
+	public static void main(String[] args) throws IOException {
+		
+		Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("http://www-proxy.idc.oracle.com", 80));
+		URL url = new URL("https://www.ip2location.com/");
+		
+		URLConnection conn = url.openConnection(proxy);
+		
+		InputStream in = conn.getInputStream();
+		
+		String output = conn.getContentEncoding();
+		output = (output == null) ? "UTF-8" : output;
+		String body = IOUtils.toString(in, output);
+		
+		System.out.println(body);
+
+	}
+	
+}

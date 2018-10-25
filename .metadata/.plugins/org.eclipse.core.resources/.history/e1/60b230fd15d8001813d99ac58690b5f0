@@ -1,0 +1,5 @@
+package com.waterline;
+
+public class GetIPAddress {
+
+}

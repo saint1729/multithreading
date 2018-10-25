@@ -1,0 +1,16 @@
+package com.waterline;
+
+import java.net.InetAddress;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.UnknownHostException;
+
+public class GetIPAddress {
+	
+	public static void main(String[] args) throws UnknownHostException, MalformedURLException {
+		InetAddress address = InetAddress.getByName(new URL("https://www.ip2location.com/").getHost());
+		
+		System.out.println(address.getHostAddress());
+	}
+	
+}
